@@ -1,0 +1,33 @@
+.Burger {
+  cursor: pointer;
+  z-index: 9999;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  padding: 8px;
+  background-color: var(--main-border-color);
+  border-radius: 8px;
+  transition: top .3s;
+}
+
+.Burger .line {
+  width: 25px;
+  height: 3px;
+  background-color:#fff;
+  margin: 5px;
+  transition: transform .3s, background-color .3s;
+}
+
+.toggle .line:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle .line:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}

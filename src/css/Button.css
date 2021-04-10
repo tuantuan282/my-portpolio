@@ -1,0 +1,44 @@
+.Button {
+  display: inline-block;
+  background-color: var(--main-color);
+  padding: 10px 40px;
+  border-radius: 26px;
+  position: relative;
+}
+
+.Button button {
+  background-color: var(--main-color);
+  border: none;
+  color: #fff;
+}
+
+.Button button:focus {
+  border: none;
+  outline: none;
+}
+
+.Button svg {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -9px;
+  transition: all 0.3s;
+}
+
+.Button p {
+  margin: 0 !important;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  letter-spacing: 2px;
+}
+
+.Button:hover p {
+  transform: translateX(-10px);
+}
+
+.Button:hover svg {
+  opacity: 1;
+  right: 20px;
+}

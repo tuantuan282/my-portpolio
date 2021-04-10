@@ -1,0 +1,36 @@
+.Achievement {
+  padding: 20px 30px 25px 40px;
+  border-radius: 5px;
+  border: 1px solid var(--main-border-color);
+  margin-bottom: 20px;
+}
+
+.Achievement .amount {
+  color: var(--main-color);
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.Achievement .amount::after {
+  content: "+";
+  position: absolute;
+  font-weight: 400;
+  font-size: 33px;
+}
+
+.Achievement .text {
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 45px;
+}
+
+.Achievement .text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 13px;
+  width: 30px;
+  height: 1px;
+  background: #777;
+}

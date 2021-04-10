@@ -1,0 +1,179 @@
+.Portfolio {
+  margin-top: 30px;
+}
+
+.Portfolio .projects .img-wrapper {
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.Portfolio .projects .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Portfolio .projects .img-wrapper .overlay {
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Portfolio .projects .img-wrapper .overlay p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.in-top .overlay {
+  left: 0 !important;
+  animation: in-top 300ms ease forwards;
+}
+
+.in-right .overlay {
+  animation: in-right 300ms ease forwards;
+}
+
+.in-bottom .overlay {
+  left: 0 !important;
+  animation: in-bottom 300ms ease forwards;
+}
+
+.in-left .overlay {
+  animation: in-left 300ms ease forwards;
+}
+
+.out-top .overlay {
+  left: 0 !important;
+  animation: out-top 300ms ease forwards;
+}
+
+.out-right .overlay {
+  animation: out-right 300ms ease forwards;
+}
+
+.out-bottom .overlay {
+  left: 0 !important;
+  animation: out-bottom 300ms ease forwards;
+}
+
+.out-left .overlay {
+  animation: out-left 300ms ease forwards;
+}
+
+.Portfolio .esc-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: rgba(225, 225, 225, 0.85);
+  cursor: pointer;
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.Portfolio .esc-btn-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.Portfolio .modal-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.Portfolio .overlay-active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 2;
+}
+
+@keyframes in-top {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes in-right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes in-bottom {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes in-left {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes out-top {
+  from {
+    top: 0;
+  }
+  to {
+    top: -100%;
+  }
+}
+
+@keyframes out-right {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes out-bottom {
+  from {
+    top: 0;
+  }
+  to {
+    top: 100%;
+  }
+}
+
+@keyframes out-left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
