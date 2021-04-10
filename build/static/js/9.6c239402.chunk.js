@@ -1,0 +1,2 @@
+(this.webpackJsonpportfolio=this.webpackJsonpportfolio||[]).push([[9],{106:function(e,t,o){"use strict";o.r(t);var n=o(0),a=o.n(n),c=o(18);t.default=function(){Object(n.useEffect)((function(){document.title="About me"}));return a.a.createElement("div",{className:"Blog container"},a.a.createElement("div",{className:"row d-flex justify-content-center"},a.a.createElement(c.a,{header:{bg:"post",main:"my",sub:"blogs"}})),a.a.createElement("div",{style:{color:"#fff"}},"No posts yet."))}}}]);
+//# sourceMappingURL=9.6c239402.chunk.js.map
