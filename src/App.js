@@ -77,7 +77,6 @@ export default class App extends Component {
                 <Route path="/portfolio" component={Portfolio} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/blog" component={Blog} />
-                <Route component={NotFound} />
               </Switch>
             </Router>
           </Suspense>
